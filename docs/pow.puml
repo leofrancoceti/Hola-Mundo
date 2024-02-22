@@ -1,0 +1,35 @@
+@startuml pow
+
+class Pow 
+class Juego
+class JuegoPelota
+class Pelota
+class Alien
+class Comida 
+class Ducha_l 
+class Jabon 
+class Enfermeria 
+class carro 
+class Mascota 
+class Ropa 
+
+Pow   o-- Juego 
+Pow o-- Ropa
+Pow o-- Mascota
+Pow o-- Jabon
+
+Alien<|-- Pow 
+Juego<|--JuegoPelota
+Pelota--*JuegoPelota 
+Pow o-- Ducha_l
+Pow o-- Enfermeria
+Pow o--- Comida
+carro --*Juego
+
+
+
+
+
+ 
+ 
+@enduml
