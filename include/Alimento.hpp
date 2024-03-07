@@ -1,15 +1,17 @@
 #pragma once
 class Alimento
 {
-   private:
-        int energia;
-   public: 
-            Alimento(int energia){
-    this->energia= energia;
+private:
+    int energia; 
 
-   }
-   ~Alimento(){}
-   int ExtraerEnergia(){
-    return energia;
-   }
+public:
+    Alimento(int energia) 
+    {
+        this->energia = energia;
+    }
+    
+    int ExtraerEnergia()
+    {
+        return energia;
+    }
 };
